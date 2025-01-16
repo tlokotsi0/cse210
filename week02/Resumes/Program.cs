@@ -13,12 +13,21 @@ class Program
         job1.DisplayJob();
 
         Job job2 = new Job();
-        job2._jobTitle = "Software Engineer";
+        job2._jobTitle = "Manager";
         job2._company = "Econet";
         job2._startYear = 2018;
         job2._endYear = 2020;
 
         job2.DisplayJob();
+
+
+        Resume cv = new Resume();
+        cv._name ="Tlokotsi Foulo";
+
+        cv._jobs.Add(job1);
+        cv._jobs.Add(job2);
+        
+            Console.WriteLine($"{cv._jobs[0]._jobTitle}");
 
     }
 }
