@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -27,7 +28,7 @@ class Program
         cv._jobs.Add(job1);
         cv._jobs.Add(job2);
         
-            Console.WriteLine($"{cv._jobs[0]._jobTitle}");
+        cv.Display();
 
     }
 }
